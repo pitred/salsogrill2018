@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GALERIA</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/main_style.css">
+  <link rel="icon" href="../img/salso-grill-text.png">
+  <link rel="stylesheet" href="../css/top-btn.css">
+  <link rel="stylesheet" href="../css/lightBox.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="DO GÓRY">Top</button>
+  <div class="wrapper">
+    <header class="top">
+      <h1><img class="img-size-header" src="../img/salso-grill.jpg" alt="Salsogrill - logo"><img class="img-size-header-right" src="../img/Cdlad_logo.png" alt="Casa - logo">&nbsp;&nbsp;&nbsp;GALERIA</h1>
+    </header>
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul>
+        <li>
+          <a class="menu" href="../index.html">HOME</a>
+        </li>
+        <li>
+          <a class="menu" href="artysci.html">ARTYŚCI</a>
+        </li>
+        <li>
+          <a class="menu" href="zio.html">ZGŁOSZENIA I OPŁATY</a>
+        </li>
+        <li>
+          <a class="menu" href="noclegi.html">ZAKWATEROWANIE</a>
+        </li>
+        <li>
+          <a class="menu" href="kontakt.html">KONTAKT</a>
+        </li>
+        <li class="social">
+          <a class="menu" href="https://web.facebook.com/events/302414723566079/" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <section class="details">
+      <ul>GALERIA</ul>
+                
+      <div class="row">
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg1.jpg" alt="foto1" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg2.jpg" alt="foto2" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg3.jpg" alt="foto3" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg4.jpg" alt="foto5" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg5.jpg" alt="foto5" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg6.jpg" alt="foto6" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="img-size-big2" src="../img/sg7.jpg" alt="foto7" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1</div>
+            <img src="../img/sg1.jpg" alt="foto1" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2</div>
+            <img src="../img/sg2.jpg" alt="foto2" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3</div>
+            <img src="../img/sg3.jpg" alt="foto3" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4</div>
+            <img src="../img/sg4.jpg" alt="foto4" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">5</div>
+            <img src="../img/sg5.jpg" alt="foto5" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6</div>
+            <img src="../img/sg6.jpg" alt="foto6" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">7</div>
+            <img src="../img/sg7.jpg" alt="foto7" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="../img/sg1.jpg" alt="foto1" style="width:100%" onclick="currentSlide(1)" alt="Salsogrill foto 1">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor" src="../img/sg2.jpg" alt="foto2" style="width:100%" onclick="currentSlide(2)" alt="Salsogrill foto 2">
+          </div>
+          
+          <div class="column">
+            <img class="demo cursor" src="../img/sg3.jpg" alt="foto3" style="width:100%" onclick="currentSlide(3)" alt="Salsogrill foto 3">
+          </div>
+          
+          <div class="column">
+            <img class="demo cursor" src="../img/sg4.jpg" alt="foto4" style="width:100%" onclick="currentSlide(4)" alt="Salsogrill foto 4">
+          </div>
+          
+          <div class="column">
+            <img class="demo cursor" src="../img/sg5.jpg" alt="foto5" style="width:100%" onclick="currentSlide(5)" alt="Salsogrill foto 4">
+          </div>
+          
+          <div class="column">
+            <img class="demo cursor" src="../img/sg6.jpg" alt="foto6" style="width:100%" onclick="currentSlide(6)" alt="Salsogrill foto 5">
+          </div>
+          
+          <div class="column">
+            <img class="demo cursor" src="../img/sg7.jpg" alt="foto7" style="width:100%" onclick="currentSlide(7)" alt="Salsogrill foto 6">
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <footer>
+      <script src="../js/data.js"></script>
+      <p class="red-sign">&copy;  Piotr Nowiński
+        <a class="links" href="mailto:pitred007@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="../js/menu_script.js"></script>
+  <script src="../js/top-btn.js"></script>
+  <script src="../js/lightBox.js"></script>
+
+</body>
+
+</html>

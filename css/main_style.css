@@ -1,0 +1,246 @@
+/* CSS Setup */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: url("../img/sg7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;  
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-decoration: none;
+  background: rgba(44, 72, 135, 0.7);
+  padding: 25px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 1.9rem;
+}
+
+a.menu {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: rgba(44, 72, 135, 0.7);
+  padding: 20px 15px 45px 15px;
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+  text-align: center;
+  transition: all 0.8s;
+  font-size: 1.1rem;
+}
+
+a:hover {
+  background: rgba(44, 72, 135, 0.7);
+  color: rgb(195, 0, 42);
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+}
+
+section,
+footer {
+  text-align: center;
+  background: rgba(44, 72, 135, 0.7);
+  margin: 20px 0;
+  color: white;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+/* Flex Container */
+.flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* Flex Item */
+.flex-nav li {
+  flex: 4;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+  /* Flex Container */
+  .wrapper {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  /* Flex Item */
+
+  .wrapper > * {
+    order: 9999;
+  }
+
+  .flex-nav {
+    order: 1;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
+  }
+
+  .top {
+    order: 2;
+  }
+
+  .details {
+    order: 3;
+    font-size: 0.6rem;
+  }
+  a.menu {
+    font-size: 1rem;
+  }
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+.img-size {
+  height: 100px;
+  width: 140px;
+}
+.img-size-big {
+  height: 250px;
+  width: 250px;
+}
+.img-size-big0 {
+  height: 120px;
+  width: 120px;
+}
+.img-size-big1 {
+  height: 450px;
+  width: 450px;
+}
+.img-size-big2 {
+  height: 150px;
+  width: 150px;
+}
+.img-size-pion {
+  height: 450px;
+  width: 300px;
+}
+.img-size-pion1 {
+  height: 600px;
+  width: 370px;
+}
+.img-size-poziom {
+  height: 600px;
+  width: 750px;
+}
+.img-size-poziom1 {
+  height: 100px;
+  width: 300px;
+}
+.img-size-poziom2 {
+  height: 150px;
+  width: 350px;
+}
+.img-size-poziom3 {
+  height: 200px;
+  width: 550px;
+}
+.img-size-picture {
+  height: 460px;
+  width: 340px;
+}
+.img-size-header {
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.img-size-header-right {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+.dyscypliny-underline {
+  text-decoration: underline black;
+}
+.restauracja-menu {
+  text-align: left;
+}
+.sponsor {
+  font-size: 2rem;
+  position: relative;
+  left: 110px;
+}
+p, li {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.details, ul {
+  font-size: 1.5rem;
+}
+.red-sign {
+  font-size: 1rem;
+}

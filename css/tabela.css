@@ -1,0 +1,36 @@
+table {
+    width: 50vw;
+    border: 2px solid blue;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid blue;
+    background-color: rgb(195, 0, 42);
+    height: 4rem;
+    font-size: 1.4rem;
+}
+td {
+    text-align: left;
+    border: 1px solid blue;
+    background-color: rgb(44, 72, 135);
+    font-size: 18px;
+    height: 5rem;
+    padding: 1rem;
+}
+.table_center {
+    text-align: center;
+    left: 0;
+    font-size: 1.5rem;
+}
+.of_pakiet_tab {
+    width: 30rem;
+}
+span {
+    color: rgb(195, 0, 42);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+s {
+    color: rgba(0, 0, 0, 0.4);
+}

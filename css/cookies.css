@@ -1,0 +1,51 @@
+#simplecookienotification_v01 {
+    display: block; 
+    z-index: 99999; 
+    min-height: 35px; 
+    width: 300px; 
+    position: fixed; 
+    background: rgb(255, 255, 255); 
+    border: 1px solid rgb(195, 0, 42); 
+    text-align: center; 
+    right: 10px; 
+    color: rgb(0, 0, 0); 
+    bottom: 10px;
+}
+
+#simplecookieinfo_div {
+    padding:10px; 
+    margin-left:15px; 
+    margin-right:15px; 
+    font-size:14px; 
+    font-weight:normal;
+}
+
+#simplecookienotification_v01_polityka {
+    color: rgb(195, 0, 42);
+}
+
+#simplecookienotification_v01_info {
+    color: rgb(255, 152, 0);
+}
+
+#jwc_hr1 {
+    height: 10px; 
+    display: block;
+}
+
+#jwc_hr2 {
+    height: 10px; 
+    display: block;
+}
+
+#okbutton {
+    position: relative; 
+    background: rgb(195, 0, 42); 
+    color: rgb(255, 255, 255); 
+    padding: 5px 15px; 
+    text-decoration: none; 
+    font-size: 12px; 
+    font-weight: normal; 
+    border: 0px solid rgb(255, 243, 224); 
+    border-radius: 0px;
+}

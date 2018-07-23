@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KONTAKT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/main_style.css">
+  <link rel="stylesheet" href="../css/form-style.css">
+  <link rel="icon" href="../img/salso-grill-text.png">
+  <link rel="stylesheet" href="../css/top-btn.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="DO GÓRY">Top</button>
+  <div class="wrapper">
+    <header class="top">
+      <h1>
+        <img class="img-size-header" src="../img/salso-grill.jpg" alt="Salsogrill - logo"><img class="img-size-header-right" src="../img/Cdlad_logo.png" alt="Casa - logo">&nbsp;KONTAKT</h1>
+    </header>
+    <nav class="flex-nav">
+      <a href="#" class="toggleNav">☰ Menu</a>
+      <ul>
+        <li>
+          <a class="menu" href="../index.html">HOME</a>
+        </li>
+        <li>
+          <a class="menu" href="aktualnosci.html">AKTUALNOŚCI</a>
+        </li>
+        <li>
+          <a class="menu" href="artysci.html">ARTYŚCI</a>
+        </li>
+        <li>
+          <a class="menu" href="zio.html">ZGŁOSZENIA I OPŁATY</a>
+        </li>
+        <li>
+          <a class="menu" href="noclegi.html">ZAKWATEROWANIE</a>
+        </li>
+        <li>
+          <a class="menu" href="galeria.html">GALERIA</a>
+        </li>
+        <li class="social">
+          <a class="menu" href="https://web.facebook.com/events/302414723566079/" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="details">
+      <br>
+      <p><h4> Casa de la Danza - recepcja</h4></p>
+      <p> tel 503 033 383</p>
+      <p>
+        <a class="links" href="mailto:recepcja@salsa.lublin.pl"><i class="fa fa-envelope-o" aria-hidden="true"></i> recepcja@salsa.lublin.pl</a>
+      </p>
+      <div id="formularz">
+        <form method="post" action="../data/frm/kontakt.php">
+          
+        <div class="test1">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <input name="name" placeholder="Twoje imię" required>
+        </div>
+        <br>
+
+        <div class="test1">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <input name="email" type="email" placeholder="Twój e-mail" required>
+        </div>
+        <br>
+
+        <div class="test1">
+          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          <textarea name="message" placeholder="Wpisz wiadomość" required></textarea>
+        </div>
+        <br>
+
+          <input class="checkbox" type="checkbox" required>
+
+          <p class="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z
+            realizacją zgłoszenia. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu do swoich danych, możliwości
+            ich poprawiania, żądania zaprzestania ich przetwarzania.
+          </p>
+          <br>
+
+          <input id="submit" name="submit" type="submit" value="Wyślij">
+
+        </form>
+      </div>
+      <br>
+    </section>
+
+    <footer>
+      <script src="../js/data.js"></script>
+      <p class="red-sign">&copy;  Piotr Nowiński
+        <a class="links" href="mailto:pitred007@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="../js/menu_script.js"></script>
+  <script src="../js/top-btn.js"></script>
+</body>
+
+</html>

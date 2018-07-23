@@ -1,0 +1,24 @@
+section#carousel > figure > img {
+    display: none;
+    margin: -70px 50px;
+    float: left;
+    position: relative;
+}
+
+section#carousel > figure.visible > img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+section#carousel > figure > figcaption {
+    display: none;
+    margin-left: 215px;
+}
+
+section#carousel > figure.visible > figcaption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
